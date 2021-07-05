@@ -1,3 +1,6 @@
+RUN this command to send email one time only ( php artisan quote:daily )<br/>
+RUN this command to send email continuesly after the specific time that mentioned in kernal.php till the terminal is ON ( php artisan schedule:work)
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
