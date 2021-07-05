@@ -6,62 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laravel Schedule Cron Job Example</title>
     <style>
-        body {
-          background: #1d1f20;
-        }
-        #ct {
-          height: 150px;
-          width: 370px;
-          border: 1px solid #f1c40f;
-          margin: 100px auto;
-          text-align: center;
-          position: relative;
-          color: #fff;
-          padding: 15px;
-        }
-        span {
-          background: #1d1f20;
-          color: #f1c40f;
-          padding: 0 10px;
-          font-size: 20px;
-          position: relative;
-          top: -28px;
-        }
-        .corner {
-          height: 30px;
-          width: 30px;
-          border-radius: 50%;
-          border: 1px solid #fff;
-          transform: rotate(-45deg);
-          position: absolute;
-          background: #1d1f20;
-        }
-        
-        #left_top {
-          top: -16px;
-          left: -16px;
-          border-color: transparent transparent #f1c40f transparent;
-        }
-        #right_top {
-          top: -16px;
-          right: -16px;
-          border-color: transparent transparent transparent #f1c40f;
-        }
-        #left_bottom {
-          bottom: -16px;
-          left: -16px;
-          border-color: transparent #f1c40f transparent transparent;
-        }
-        #right_bottom {
-          bottom: -16px;
-          right: -16px;
-          border-color: #f1c40f transparent transparent transparent;
-        }
-        p {
-          padding-top: 13px;
-          font-size: 18px;
-        }
-        
+      .blockquote {
+  padding: 60px 80px 40px;
+  position: relative;
+}
+.blockquote p {
+  font-family: "Utopia-italic";
+  font-size: 35px;
+  font-weight: 700px;
+  text-align: center;
+}
+
+/*blockquote p::before {
+    content: "\f095"; 
+    font-family: FontAwesome;
+   display: inline-block;
+   padding-right: 6px;
+   vertical-align: middle;
+  font-size: 180px;
+ }*/
+
+.blockquote:before {
+  position: absolute;
+  font-family: "FontAwesome";
+  top: 0;
+
+  content: "\f10d";
+  font-size: 200px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.blockquote::after {
+  content: "";
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  border-bottom: 3px solid #bf0024;
+  height: 3px;
+  width: 200px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.otro-blockquote {
+  font-size: 1.4em;
+  width: 60%;
+  margin: 50px auto;
+  font-family: Open Sans;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid #d13a26;
+  line-height: 1.6;
+  position: relative;
+  background: #ededed;
+}
+
+.otro-blockquote::before {
+  font-family: Arial;
+  content: "\201C";
+  color: #78c0a8;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+.otro-blockquote::after {
+  content: "";
+}
+
+.otro-blockquote span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
           </style>
 </head>
 <body>
